@@ -7,8 +7,7 @@ public class Exercise2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int num1; //Variable declared and used to let the user introduce the number
-		int num2;
+		int num1, num2; //Variable declared and used to let the user introduce the numbers
 		
 		Scanner sc = new Scanner(System.in); //Scanner is started to introduce data into variables
 		
