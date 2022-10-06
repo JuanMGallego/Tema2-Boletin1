@@ -2,7 +2,7 @@ package tema2boletin1;
 
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Exercise4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -21,15 +21,16 @@ public class Exercise2 {
 		num2 = sc.nextInt();
 		System.out.println();
 		
-		/*If the numbers are the same, it will be printed, else, the program will print that they aren't*/
+		/*If num1 is smaller than num2, it will be printed in that order, else, the program
+		will show them in reverse*/
 		
-		if (num1 == num2) {
+		if (num1 < num2) {
 		
-			System.out.println("Los números introducidos son iguales.");
+			System.out.println("Ordenados de menor a mayor: " + num1 + " < " + num2);
 		
 		} else {
 			
-			System.out.println("Los números introducidos no son iguales.");
+			System.out.println("Ordenados de menor a mayor: " + num2 + " < " + num1);
 			
 		}
 		

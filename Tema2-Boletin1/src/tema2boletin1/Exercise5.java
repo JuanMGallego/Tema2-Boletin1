@@ -2,12 +2,12 @@ package tema2boletin1;
 
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Exercise5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int num1, num2; //Variable declared and used to let the user introduce the numbers
+		int num1, num2, num3; //Variable declared and used to let the user introduce the numbers
 		
 		Scanner sc = new Scanner(System.in); //Scanner is started to introduce data into variables
 		
@@ -19,21 +19,20 @@ public class Exercise2 {
 		
 		System.out.print("Introduzca otro número: ");
 		num2 = sc.nextInt();
+		
+		System.out.print("Introduzca un tercer: ");
+		num3 = sc.nextInt();
 		System.out.println();
 		
-		/*If the numbers are the same, it will be printed, else, the program will print that they aren't*/
-		
-		if (num1 == num2) {
-		
-			System.out.println("Los números introducidos son iguales.");
-		
-		} else {
+		if (num3 > num2 && num2 > num1) {
 			
-			System.out.println("Los números introducidos no son iguales.");
+			System.out.println("Ordenados de mayor a menor: " + num1 + " > " + num2 + " > " + num3);
+			
+		} else if (num3 < num2) {
+		
+			
 			
 		}
-		
-		sc.close(); //Scanner is closed
 		
 	}
 
