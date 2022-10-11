@@ -24,15 +24,43 @@ public class Exercise5 {
 		num3 = sc.nextInt();
 		System.out.println();
 		
+		/*The program will search for the correct order between all the options that the user 
+		could give, then it will print the solution*/
+		
 		if (num3 > num2 && num2 > num1) {
 			
 			System.out.println("Ordenados de mayor a menor: " + num1 + " > " + num2 + " > " + num3);
 			
-		} else if (num3 < num2) {
-		
+		} else if (num1 > num2 && num2 > num3) {
 			
+			System.out.println("Ordenados de mayor a menor: " + num3 + " > " + num2 + " > " + num1);
+					
+		} else if (num3 > num1 && num1 > num2) {
+			
+			System.out.println("Ordenados de mayor a menor: " + num2 + " > " + num1 + " > " + num3);
+			
+		} else if (num2 > num3 && num3 > num1) {
+			
+			System.out.println("Ordenados de mayor a menor: " + num1 + " > " + num3 + " > " + num2);
+			
+		} else if (num2 > num1 && num1 > num3) {
+			
+			System.out.println("Ordenados de mayor a menor: " + num3 + " > " + num1 + " > " + num2);
+			
+		} else if (num1 > num3 && num3 > num2) {
+			
+			System.out.println("Ordenados de mayor a menor: " + num2 + " > " + num3 + " > " + num1);
+		
+		/*If there were two equal numbers, the program will tell you to restart the verification 
+		with 3 different numbers.*/
+			
+		} else if (num1 == num2 || num2 == num3 || num3 == num1) {
+			
+			System.out.println("Has introducido dos números iguales, vuelve a introducir 3 números");
 			
 		}
+		
+		sc.close(); //Scanner is closed
 		
 	}
 
