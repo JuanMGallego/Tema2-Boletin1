@@ -18,7 +18,7 @@ public class Exercise8 {
 		System.out.println();
 		
 		/*Firstly, it will detect if the number is less than 0 and it will give an error. Then if the number
-		is between 0 and 10 it will print the digits it has. And finally, if the user introduces a higher
+		is between 0 and 10 it will print the mark. And finally, if the user introduces a higher
 		number, it will print a message*/
 		
 		if (mark < 0) {
